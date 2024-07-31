@@ -34,6 +34,15 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+}
+
 embed,
 iframe,
 img,
@@ -155,7 +164,8 @@ button {
 /* Section Heading Css Start */
 .sec-title h2 {
   position: relative;
-  z-index: 99;
+  z-index: 2;
+  margin-bottom: 20px;
 }
 
 .sec-title h2 span::before {
@@ -179,6 +189,7 @@ button {
   height: 3px;
   background: var(--primary-color);
   width: 100px;
+  bottom: -15%;
 }
 
 /* HomePage */
@@ -425,7 +436,7 @@ button {
   margin: 30px 0 0 0;
 }
 
-.whatweoffer-item p{
+.whatweoffer-item p {
   font-size: 14px;
 }
 
