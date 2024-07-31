@@ -63,24 +63,92 @@ button {
   background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border-radius: 5px;
 }
 
 ::selection {
   color: var(--white);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .text-bg-dark{
-  /* background: linear-gradient(135deg, #12277d, #1a3e8c) ; */
   background-color: rgba(18, 39, 125, 1) !important;
 }
 
-@media(min-width:320px) or (max-width:1024){
-  .sidebar{
-  }
+/* Header Css Start */
+
+.nav-hero li a {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
 }
+
+.nav-hero li a:hover,
+.nav-hero li a.active {
+  color: var(--white) !important;
+}
+
+.nav-hero li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  transition: width 0.25s ease-out, left 0.25s ease-out;
+}
+
+.nav-hero li a.hover-left::after,
+.nav-hero li a.active::after {
+  left: 0;
+  width: 100%;
+}
+
+.nav-hero li a.hover-right::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+/* Header Css End */
+
+
+
+
+/*
+.nav-hero li a {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+}
+
+.nav-hero li a:hover,
+.nav-hero li a.active {
+  color: var(--white) !important;
+}
+
+.nav-hero li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-hero li a:hover::after,
+.nav-hero li a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+ */
+
 .hero-section {
   height: 100dvh;
   position: relative;
@@ -188,6 +256,10 @@ button {
   display: inline-block;
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+#getquote .btn-banner{
+  padding: 4px 12px !important;
 }
 
 .btn-banner .gradient {
