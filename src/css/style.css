@@ -447,15 +447,30 @@ button {
 }
 
 /* Services */
+
 .img-ser {
-  position: relative;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
-  height: 100%;
-  object-fit: cover;
 }
 
+.img-ser div {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.img-ser div:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+}
+/* For background image usage */
+.img-ser-3dprinter,
+.img-ser-productdesign,
+.img-ser-research,
+.img-ser-server {
+  background-size: cover; /* Ensure the background image covers the container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  height: 100%; /* Full height of the column */
+  background-image: url(../../img/services/3dprinter.jpg);
+}
 .img-ser-3dprinter {
   background-image: url(../../img/services/3dprinter.jpg);
 }
@@ -467,35 +482,4 @@ button {
 }
 .img-ser-server {
   background-image: url(../../img/services/server.jpg);
-}
-
-.img-ser img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease-in-out;
-}
-
-.img-ser:hover img {
-  transform: scale(1.08);
-}
-
-.img-ser::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.img-ser:hover::after {
-  opacity: 1;
-}
-
-.ser-cont-main .ser-cont p {
-  font-size: 14px;
 }
