@@ -13,48 +13,41 @@
 
     <nav class="navbar navbar-expand-lg fixed-top nav-hero">
       <div class="container">
-        <a class="navbar-brand me-auto navlg" href="index.html"
-          ><img src="img/logo.svg" width="170" height="auto"
-        /></a>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
+        <a class="navbar-brand me-auto navlg" href="index.html">
+          <img src="img/logo.svg" width="170" height="auto" />
+        </a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <img
-              src="img/logo.svg"
-              width="170"
-              class="offcanvas-title navbar-brand"
-              id="offcanvasNavbarLabel"
-            />
-
-            <button
-              type="button"
-              class="btn-close border-0 shadow-none outline-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            >
-            <i class="fa-solid fa-xmark text-white"></i></button>
+            <img src="img/logo.svg" width="170" class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel" />
+            <button type="button" class="btn-close border-0 shadow-none outline-none" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark text-white"></i>
+            </button>
           </div>
-          <div class="offcanvas-body d-flex flex-lg-row flex-column  ">
-            <ul
-              class="navbar-nav justify-content-md-start justify-content-lg-center flex-grow-1 pe-3"
-            >
+          <div class="offcanvas-body d-flex flex-lg-row flex-column">
+            <ul class="navbar-nav justify-content-md-start justify-content-lg-center flex-grow-1 pe-3">
               <li class="nav-item">
-                <a
-                  class="nav-link mx-lg-2 active"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link mx-lg-2 nav-text active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">About Us</a>
+                <a class="nav-link nav-text mx-lg-2" href="#">About Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Services</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">3d Modelling</a></li>
+                  <li><a class="dropdown-item" href="#">3d Printing</a></li>
+                  <li><a class="dropdown-item" href="#">Product Animation</a></li>
+                  <li><a class="dropdown-item" href="#">Product Designing</a></li>
+                  <li><a class="dropdown-item" href="#">Product Research</a></li>
+                  <li><a class="dropdown-item" href="#">Prototype Development</a></li>
+                  <li><a class="dropdown-item" href="#">Product Prototype</a></li>
+                  <li><a class="dropdown-item" href="#">Prototyping</a></li>
+                  <li><a class="dropdown-item" href="#">Research & Development</a></li>
+                  <li><a class="dropdown-item" href="#">Innovation Consulting</a></li>
+                  <li><a class="dropdown-item" href="#">IT Consultation</a></li>
+                  <li><a class="dropdown-item" href="#">IT Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="#">Application Development</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">Portfolio</a>
@@ -63,8 +56,8 @@
                 <a class="nav-link mx-lg-2" href="#">Contact Us</a>
               </li>
             </ul>
-            <div class="d-flex justify-content-center align-items-center">              
-              <button  class="border-0 p-0 shadow-none bg-transparent btn-banner-main" id="getquote">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="border-0 p-0 shadow-none bg-transparent btn-banner-main" id="getquote">
                 <a href="" class="btn-banner">
                   <span class="transition"></span>
                   <span class="gradient"></span>
@@ -74,18 +67,13 @@
             </div>
           </div>
         </div>
-        <button
-          class="navbar-toggler p-0 border-0 shadow-none outline-none"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-        <i class="fa-solid fa-align-right text-white"></i>
+        <button class="navbar-toggler p-0 border-0 shadow-none outline-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-align-right text-white"></i>
         </button>
       </div>
     </nav>
+    
+    
 
     <section class="hero-section container-fluid">
       <div class="hero-bg">
@@ -118,10 +106,11 @@
       </div>
     </section>
 
+    <!-- What We Offer -->
     <section class="whatweoffer sec-mar container-fluid">
       <div class="container">
         <div class="sec-title justify-content-center">
-          <h2 class="text-center">What We Offer</h2>
+          <h2 class="text-center fw-bolder"><span>What </span>We Offer</h2>
           <div class="row justify-content-center">
             <div class="col-md-6">
               <p class="text-center">
@@ -132,6 +121,8 @@
         </div>
       </div>
     </section>
+
+
     
   </body>
   <script src="src/js/script.js"></script>

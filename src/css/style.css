@@ -87,77 +87,103 @@ button {
   height: max-content;
 }
 
-
-.nav-hero li a {
-  display: inline-block;
-  position: relative;
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
   color: var(--white);
 }
 
-.nav-hero li a:hover,
-.nav-hero li a.active {
+/* NavBar Hover and Active CSS End */
+
+
+.nav-hero .nav-text {
+  position: relative; /* Ensure dropdown positioning works */
+}
+
+.nav-hero .navbar-nav a.nav-link {
+  position: relative;
+  color: var(--white);
+  padding: 10px 15px; /* Add padding to improve spacing */
+}
+
+.nav-hero .nav-link:hover,
+.nav-hero .nav-link.active {
   color: var(--white) !important;
 }
 
-.nav-hero li a::after {
+.nav-hero .nav-link::before {
+ 
+
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
   bottom: 0;
   left: 0;
+  width: 0;
+  height: 2px;
   background-color: var(--white);
-  transition: width 0.25s ease-out, left 0.25s ease-out;
+  transition: width 0.25s ease-out, left 0.25s ease-out; 
+
 }
 
-.nav-hero li a.hover-left::after,
-.nav-hero li a.active::after {
-  left: 0;
+.nav-hero .nav-link.hover-left::before,
+.nav-hero .nav-link.active::before {
   width: 100%;
+  left: 0%;
 }
 
-.nav-hero li a.hover-right::after {
+.nav-hero .nav-link.hover-right::before {
   left: auto;
   right: 0;
   width: 100%;
 }
 
-/* Header Css End */
+/* Ensure dropdowns are styled correctly */
+.nav-hero .dropdown-menu {
+  background-color: var(--white); /* Adjust background if needed */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+}
 
+.nav-hero .dropdown-menu a {
+  color: var(--primary-color);
+}
 
-
-
-/*
-.nav-hero li a {
-  display: inline-block;
-  position: relative;
+.nav-hero .dropdown-menu a:hover {
+  background-color: var(--primary-color); 
   color: var(--white);
 }
 
-.nav-hero li a:hover,
-.nav-hero li a.active {
-  color: var(--white) !important;
+/* Header Css End */
+
+/* Section Heading Css Start */
+.sec-title h2{
+  position: relative;
+  z-index: 99;
 }
 
-.nav-hero li a::after {
-  content: '';
+.sec-title h2 span::before{
+  content: "";
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--white);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.4;
+  top: -10%;
 }
-
-.nav-hero li a:hover::after,
-.nav-hero li a.active::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.sec-title h2::before{
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: var(--primary-color);
+  width: 100px; 
 }
- */
 
  /* HomePage */
 
