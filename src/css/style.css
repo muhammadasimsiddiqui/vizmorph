@@ -1,0 +1,234 @@
+/* Montserrat for Primary Font */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sedan+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+/* Roboto for Secondary Font */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+body {
+}
+
+/************************************ Global CSS Start ************************************/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --primary-color: #12277d;
+  --secondary-color: #e1d0a7;
+  --white: #fff;
+  --dark: #000;
+
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+  text-decoration: none;
+  outline: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+/* Home */
+.hero-section {
+  height: 100dvh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-section .hero-bg {
+  background: linear-gradient(
+    99.65deg,
+    #161212 20.99%,
+    #12143e 40.89%,
+    #31438a 95.69%
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  opacity: 1;
+}
+
+.hero-section .hero-bg div:nth-child(1) {
+  background: url(../../img/hero/hero-left.png) no-repeat;
+  position: absolute;
+  width: 130%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(28.29deg);
+  left: -55%;
+  top: -0%;
+  opacity: 0.15;
+}
+
+.hero-section .hero-bg div:nth-child(2) {
+  background: url(../../img/hero/hero-bottom.png) no-repeat;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 35%;
+  left: -40%;
+  opacity: 0.7; /* Opacity should be 0 or 1, not 0px */
+  transform: rotate(-230.12deg);
+}
+
+.hero-section .hero-bg div:nth-child(3) {
+  background: url(../../img/hero/hero-bottom.png) no-repeat;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  width: 70%;
+  height: 70%;
+  opacity: 1;
+  right: -7%;
+  top: 20%;
+}
+
+.hero-section .hero-content {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-section .hero-content {
+  color: var(--white);
+}
+
+.hero-section .hero-content div h1 {
+  font-family: var(--secondary-font);
+  font-size: 60px;
+}
+
+.hero-section .hero-content div p {
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
+.btn-banner-main {
+  overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  .hero-section .hero-content {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+.btn-banner {
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 600;
+  background: var(--white);
+  color: var(--primary-color);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+.btn-banner .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    rgba(18, 39, 125, 0),
+    rgba(18, 39, 125, 0),
+    rgba(18, 39, 125, 0.3)
+  );
+  z-index: 0;
+}
+
+.btn-banner .label {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-banner .transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(18, 39, 125, 1);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.btn-banner:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+.btn-banner:hover {
+  background-color: rgba(18, 39, 125, 1); /* Change background color on hover */
+  color: var(--white); /* Change text color to white on hover */
+}
+
+.btn-banner:active {
+  color: var(--white) !important;
+  transform: scale(0.97);
+}
