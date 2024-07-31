@@ -480,3 +480,7 @@ button {
 .img-ser:hover::after {
   opacity: 1;
 }
+
+.ser-cont-main .ser-cont p{
+  font-size: 14px;
+}
