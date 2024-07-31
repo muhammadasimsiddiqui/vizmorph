@@ -72,13 +72,13 @@ button {
   background-color: var(--primary-color);
 }
 
-.text-bg-dark{
+.text-bg-dark {
   background-color: rgba(18, 39, 125, 1) !important;
 }
 
 /* Header Css Start */
 
-.nav-hero .btn-close{
+.nav-hero .btn-close {
   background: none;
   opacity: 0.8;
   font-size: 24px;
@@ -96,7 +96,6 @@ button {
 
 /* NavBar Hover and Active CSS End */
 
-
 .nav-hero .nav-text {
   position: relative; /* Ensure dropdown positioning works */
 }
@@ -113,17 +112,14 @@ button {
 }
 
 .nav-hero .nav-link::before {
- 
-
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
   background-color: var(--white);
-  transition: width 0.25s ease-out, left 0.25s ease-out; 
-
+  transition: width 0.25s ease-out, left 0.25s ease-out;
 }
 
 .nav-hero .nav-link.hover-left::before,
@@ -142,7 +138,7 @@ button {
 .nav-hero .dropdown-menu {
   background-color: var(--white); /* Adjust background if needed */
   border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .nav-hero .dropdown-menu a {
@@ -150,19 +146,19 @@ button {
 }
 
 .nav-hero .dropdown-menu a:hover {
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
 /* Header Css End */
 
 /* Section Heading Css Start */
-.sec-title h2{
+.sec-title h2 {
   position: relative;
   z-index: 99;
 }
 
-.sec-title h2 span::before{
+.sec-title h2 span::before {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -174,18 +170,18 @@ button {
   opacity: 0.4;
   top: -10%;
 }
-.sec-title h2::before{
+.sec-title h2::before {
   content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
   background: var(--primary-color);
-  width: 100px; 
+  width: 100px;
 }
 
- /* HomePage */
+/* HomePage */
 
 .hero-section {
   height: 100dvh;
@@ -296,7 +292,7 @@ button {
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
 }
 
-#getquote .btn-banner{
+#getquote .btn-banner {
   padding: 4px 12px !important;
 }
 
@@ -340,7 +336,7 @@ button {
 
 .btn-banner:hover {
   background-color: rgba(18, 39, 125, 1);
-  color: var(--white); 
+  color: var(--white);
 }
 
 .btn-banner:active {
@@ -363,7 +359,7 @@ button {
   user-select: none;
 }
 
-.btn-quote a p{
+.btn-quote a p {
   margin: 0;
   z-index: 1;
 }
@@ -412,13 +408,29 @@ button {
   background: var(--white);
 }
 
-.sec-title h2{
+.sec-title h2 {
   font-family: var(--secondary-font);
 }
-.sec-title p{
+.sec-title p {
   font-family: var(--primary-font);
 }
 
-.sec-mar{
+.sec-mar {
   margin-top: 60px;
+}
+
+/* What We Offer */
+.whatweoffer-item {
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.whatweoffer-item p{
+  font-size: 14px;
+}
+
+.whatweoffer-item a {
+  text-align: center;
+  color: var(--primary-color) !important;
+  font-family: var(--primary-font);
 }

@@ -6,47 +6,100 @@
     <title>Home</title>
     <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="home">
-
     <nav class="navbar navbar-expand-lg fixed-top nav-hero">
       <div class="container">
         <a class="navbar-brand me-auto navlg" href="index.html">
           <img src="img/logo.svg" width="170" height="auto" />
         </a>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
           <div class="offcanvas-header">
-            <img src="img/logo.svg" width="170" class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel" />
-            <button type="button" class="btn-close border-0 shadow-none outline-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img
+              src="img/logo.svg"
+              width="170"
+              class="offcanvas-title navbar-brand"
+              id="offcanvasNavbarLabel"
+            />
+            <button
+              type="button"
+              class="btn-close border-0 shadow-none outline-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
               <i class="fa-solid fa-xmark text-white"></i>
             </button>
           </div>
           <div class="offcanvas-body d-flex flex-lg-row flex-column">
-            <ul class="navbar-nav justify-content-md-start justify-content-lg-center flex-grow-1 pe-3">
+            <ul
+              class="navbar-nav justify-content-md-start justify-content-lg-center flex-grow-1 pe-3"
+            >
               <li class="nav-item">
-                <a class="nav-link mx-lg-2 nav-text active" aria-current="page" href="index.html">Home</a>
+                <a
+                  class="nav-link mx-lg-2 nav-text active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-text mx-lg-2" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services</a
+                >
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">3d Modelling</a></li>
                   <li><a class="dropdown-item" href="#">3d Printing</a></li>
-                  <li><a class="dropdown-item" href="#">Product Animation</a></li>
-                  <li><a class="dropdown-item" href="#">Product Designing</a></li>
-                  <li><a class="dropdown-item" href="#">Product Research</a></li>
-                  <li><a class="dropdown-item" href="#">Prototype Development</a></li>
-                  <li><a class="dropdown-item" href="#">Product Prototype</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Animation</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Designing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Research</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Prototype Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Product Prototype</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Prototyping</a></li>
-                  <li><a class="dropdown-item" href="#">Research & Development</a></li>
-                  <li><a class="dropdown-item" href="#">Innovation Consulting</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Research & Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Innovation Consulting</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">IT Consultation</a></li>
-                  <li><a class="dropdown-item" href="#">IT Infrastructure</a></li>
-                  <li><a class="dropdown-item" href="#">Application Development</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">IT Infrastructure</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Application Development</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -57,7 +110,10 @@
               </li>
             </ul>
             <div class="d-flex justify-content-center align-items-center">
-              <button class="border-0 p-0 shadow-none bg-transparent btn-banner-main" id="getquote">
+              <button
+                class="border-0 p-0 shadow-none bg-transparent btn-banner-main"
+                id="getquote"
+              >
                 <a href="" class="btn-banner">
                   <span class="transition"></span>
                   <span class="gradient"></span>
@@ -67,13 +123,18 @@
             </div>
           </div>
         </div>
-        <button class="navbar-toggler p-0 border-0 shadow-none outline-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler p-0 border-0 shadow-none outline-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
           <i class="fa-solid fa-align-right text-white"></i>
         </button>
       </div>
     </nav>
-    
-    
 
     <section class="hero-section container-fluid">
       <div class="hero-bg">
@@ -86,7 +147,12 @@
         class="container hero-content justify-content-center align-content-center"
       >
         <div class="col-md-7">
-          <h1 class="align-items-center"><span style="color: #6484e8;">V</span>iz<span style="color: rgba(243, 159, 1, 1);">M</span>orph</h1>
+          <h1 class="align-items-center">
+            <span style="color: #6484e8">V</span>iz<span
+              style="color: rgba(243, 159, 1, 1)"
+              >M</span
+            >orph
+          </h1>
           <p>
             At Vizmorph, we assist you in realizing your dreams with our wide
             range of services that provide complete package from the concept to
@@ -94,8 +160,10 @@
             to the other streams giving sure about we can welcome all of your
             product development requirements.
           </p>
-          
-          <button  class="border-0 p-0 shadow-none bg-transparent btn-banner-main">
+
+          <button
+            class="border-0 p-0 shadow-none bg-transparent btn-banner-main"
+          >
             <a href="" class="btn-banner">
               <span class="transition"></span>
               <span class="gradient"></span>
@@ -114,16 +182,57 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <p class="text-center">
-                At Vizmorph, we specialize in product design and development, offering services such as design optimization, prototyping, 3D printing, rendering and animation, advanced FEA analysis, and modular furniture design to bring your ideas to life with precision and innovation.
+                At Vizmorph, we specialize in product design and development,
+                offering services such as design optimization, prototyping, 3D
+                printing, rendering and animation, advanced FEA analysis, and
+                modular furniture design to bring your ideas to life with
+                precision and innovation.
               </p>
+            </div>
+          </div>
+        </div>
+        <div class="whatweoffer-container">
+          <div class="row">
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-cogs"></i>
+                <p class="fw-bold">Product Design & Optimization</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-drafting-compass text-center"></i>
+                <p class="fw-bold">Product Development & Prototyping</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-print"></i>
+                <p class="fw-bold">3D Printing Services</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-video"></i>
+                <p class="fw-bold">Product Rendering & Animation</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-chart-line"></i>
+                <p class="fw-bold">Advance FEA Analysis</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 whatweoffer-item">
+              <a href="#">
+                <i class="fas fa-2x fa-couch"></i>
+                <p class="fw-bold">Modular Furniture Design</p>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-    
   </body>
   <script src="src/js/script.js"></script>
   <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
