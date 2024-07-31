@@ -450,8 +450,23 @@ button {
 .img-ser {
   position: relative;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
+}
 
+.img-ser-3dprinter {
+  background-image: url(../../img/services/3dprinter.jpg);
+}
+.img-ser-productdesign {
+  background-image: url(../../img/services/productdesign.jpg);
+}
+.img-ser-research {
+  background-image: url(../../img/services/research.jpg);
+}
+.img-ser-server {
+  background-image: url(../../img/services/server.jpg);
 }
 
 .img-ser img {
@@ -481,6 +496,6 @@ button {
   opacity: 1;
 }
 
-.ser-cont-main .ser-cont p{
+.ser-cont-main .ser-cont p {
   font-size: 14px;
 }
