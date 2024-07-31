@@ -78,6 +78,16 @@ button {
 
 /* Header Css Start */
 
+.nav-hero .btn-close{
+  background: none;
+  opacity: 0.8;
+  font-size: 24px;
+  align-items: center;
+  padding: 0;
+  height: max-content;
+}
+
+
 .nav-hero li a {
   display: inline-block;
   position: relative;
@@ -149,6 +159,8 @@ button {
 }
  */
 
+ /* HomePage */
+
 .hero-section {
   height: 100dvh;
   position: relative;
@@ -193,7 +205,7 @@ button {
   height: 100%;
   top: 45%;
   left: -40%;
-  opacity: 0.7; /* Opacity should be 0 or 1, not 0px */
+  opacity: 0.7;
   transform: rotate(-230.12deg);
 }
 
@@ -301,8 +313,8 @@ button {
 }
 
 .btn-banner:hover {
-  background-color: rgba(18, 39, 125, 1); /* Change background color on hover */
-  color: var(--white); /* Change text color to white on hover */
+  background-color: rgba(18, 39, 125, 1);
+  color: var(--white); 
 }
 
 .btn-banner:active {
@@ -372,4 +384,15 @@ button {
 .btn-quote a:active:before,
 .btn-quote a:active:after {
   background: var(--white);
+}
+
+.sec-title h2{
+  font-family: var(--secondary-font);
+}
+.sec-title p{
+  font-family: var(--primary-font);
+}
+
+.sec-mar{
+  margin-top: 60px;
 }
