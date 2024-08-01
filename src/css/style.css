@@ -22,7 +22,6 @@ body {
 
 :root {
   --primary-color: #12277d;
-  --secondary-color: #e1d0a7;
   --white: #fff;
   --dark: #000;
 
@@ -105,6 +104,9 @@ button {
 }
 
 /* NavBar Hover and Active CSS End */
+.heronavscroll {
+  background: rgba(18, 39, 125, 1);
+}
 
 .nav-hero .nav-text {
   position: relative; /* Ensure dropdown positioning works */
@@ -194,6 +196,10 @@ button {
 }
 
 /* HomePage */
+
+/************************************  ************************************/
+/****************************** Hero Section ******************************/
+/************************************  ************************************/
 
 .hero-section {
   height: 100dvh;
@@ -304,10 +310,6 @@ button {
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
 }
 
-#getquote .btn-banner {
-  padding: 4px 12px !important;
-}
-
 .btn-banner .gradient {
   position: absolute;
   width: 100%;
@@ -356,68 +358,8 @@ button {
   transform: scale(0.97);
 }
 
-.btn-quote a {
-  all: unset;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 2px 18px;
-  border: var(--white) solid 0.15em;
-  border-radius: 50px;
-  color: var(--white);
-  cursor: pointer;
-  overflow: hidden;
-  transition: border 300ms, color 300ms;
-  user-select: none;
-}
-
-.btn-quote a p {
-  margin: 0;
-  z-index: 1;
-}
-
-.btn-quote a:hover {
-  color: var(--primary-color) !important;
-}
-
-.btn-quote a:active {
-  border-color: var(--white);
-  color: var(--primary-color);
-}
-
-.btn-quote a::after,
-.btn-quote a::before {
-  content: "";
-  position: absolute;
-  width: 9em;
-  aspect-ratio: 1;
-  background: var(--white);
-  opacity: 50%;
-  border-radius: 50%;
-  transition: transform 500ms, background 300ms;
-}
-
-.btn-quote a::before {
-  left: 0;
-  transform: translateX(-8em);
-}
-
-.btn-quote a::after {
-  right: 0;
-  transform: translateX(8em);
-}
-
-.btn-quote a:hover:before {
-  transform: translateX(-1em);
-}
-
-.btn-quote a:hover:after {
-  transform: translateX(1em);
-}
-
-.btn-quote a:active:before,
-.btn-quote a:active:after {
-  background: var(--white);
+#getquote .btn-banner {
+  padding: 4px 12px !important;
 }
 
 .sec-title h2 {
@@ -431,7 +373,10 @@ button {
   margin-top: 60px;
 }
 
-/* What We Offer */
+/*****************************************  ****************************************/
+/****************************** What We Offer Section ******************************/
+/*****************************************  ****************************************/
+
 .small-icon-box {
   text-align: center;
   margin: 30px 0 0 0;
@@ -447,13 +392,18 @@ button {
   font-family: var(--primary-font);
 }
 
-/* Services */
+/**************************************  **************************************/
+/****************************** Services Section ******************************/
+/**************************************  **************************************/
+
 .ser-cont h5 {
   color: var(--primary-color);
 }
+
 .ser-cont p {
   font-size: 14px;
 }
+
 .img-ser {
   overflow: hidden;
 }
@@ -467,26 +417,56 @@ button {
   transform: scale(1.05);
   background-color: var(--primary-color);
 }
-/* For background image usage */
+
 .img-ser-3dprinter,
 .img-ser-productdesign,
 .img-ser-research,
 .img-ser-server {
-  background-size: cover; /* Ensure the background image covers the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  height: 100%; /* Full height of the column */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
   background-image: url(../../img/services/3dprinter.jpg);
 }
+
 .img-ser-3dprinter {
   background-image: url(../../img/services/3dprinter.jpg);
 }
+
 .img-ser-productdesign {
   background-image: url(../../img/services/productdesign.jpg);
 }
+
 .img-ser-research {
   background-image: url(../../img/services/research.jpg);
 }
+
 .img-ser-server {
   background-image: url(../../img/services/server.jpg);
+}
+
+/**************************************  **************************************/
+/**************************** Testimonials Section ****************************/
+/**************************************  **************************************/
+
+.testimonials {
+  background-color: var(--primary-color);
+}
+
+.testimonials .sec-title h2 span::before {
+  background-color: var(--white);
+}
+
+.testimonials .sec-title h2 {
+  color: var(--white);
+}
+
+.testimonials .sec-title p {
+  color: var(--white);
+}
+
+.testimonials .sec-title h2::before {
+  background: var(--white);
+  left: 0;
+  transform: translateX(0);
 }

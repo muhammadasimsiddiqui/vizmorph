@@ -24,28 +24,18 @@ document.querySelectorAll('.nav-hero li a').forEach(link => {
   });
   
 
-//   document.addEventListener('DOMContentLoaded', function() {
-//     const navBar = document.querySelector('.nav-hero');
-  
-//     window.addEventListener('scroll', function() {
-//       if (window.scrollY > 50) {
-//         navBar.classList.add('scrollnav');
-//       } else {
-//         navBar.classList.remove('scrollnav');
-//       }
-//     });
-//   });
-  
   document.addEventListener('DOMContentLoaded', function() {
     const navBar = document.querySelector('.nav-hero');
   
     window.addEventListener('scroll', function() {
       if (window.scrollY > 50) {
-        navBar.style.setProperty('background-color', 'rgba(18, 39, 125, 1)');
+        navBar.classList.add('heronavscroll');
       } else {
-        navBar.style.setProperty('background-color', 'transparent');    
-    }
+        navBar.classList.remove('heronavscroll');
+      }
     });
   });
+  
+ 
   
   
