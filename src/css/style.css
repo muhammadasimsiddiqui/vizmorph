@@ -63,6 +63,7 @@ a:hover,
 button {
   text-decoration: none;
   outline: 0;
+  color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -83,6 +84,14 @@ button {
 
 .text-bg-dark {
   background-color: rgba(18, 39, 125, 1) !important;
+}
+
+.text-color {
+  color: var(--primary-color);
+}
+
+.bg-color{
+  background-color: var(--primary-color);
 }
 
 /* Header Css Start */
@@ -396,10 +405,6 @@ button {
 /****************************** Services Section ******************************/
 /**************************************  **************************************/
 
-.ser-cont h5 {
-  color: var(--primary-color);
-}
-
 .ser-cont p {
   font-size: 14px;
 }
@@ -501,6 +506,27 @@ button {
   object-fit: contain;
 }
 
-.swiper-container {
+.testimonials-reviews,
+.testimonials-reviews-reverse {
   pointer-events: none;
+  z-index: -1;
+}
+
+/**************************************  **************************************/
+/****************************** Contact Us Section ****************************/
+/**************************************  **************************************/
+.cont-social i{
+  font-size: 20px;
+}
+
+.cont-social a:last-child i{
+  padding-left: 19px !important;
+  padding-right: 19px !important;
+}
+.con-hover{
+  transition: all .3s ease-in-out;
+}
+.con-hover:hover{
+  background-color: #EDF6EE;
+  color: var(--primary-color)!important;
 }
