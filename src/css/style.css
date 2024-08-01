@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 
 body {
+  font-family: var(--primary-font);
 }
 
 *,
@@ -447,13 +448,19 @@ button {
 }
 
 /* Services */
-
+.ser-cont h5{
+  color: var(--primary-color);
+}
+.ser-cont p{
+  font-size: 14px;
+}
 .img-ser {
   overflow: hidden;
 }
 
 .img-ser div {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  min-height: 250px;
 }
 
 .img-ser div:hover {
