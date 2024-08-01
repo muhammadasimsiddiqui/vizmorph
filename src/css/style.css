@@ -432,26 +432,26 @@ button {
 }
 
 /* What We Offer */
-.whatweoffer-item {
+.small-icon-box {
   text-align: center;
   margin: 30px 0 0 0;
 }
 
-.whatweoffer-item p {
+.small-icon-box p {
   font-size: 14px;
 }
 
-.whatweoffer-item a {
+.small-icon-box a {
   text-align: center;
   color: var(--primary-color) !important;
   font-family: var(--primary-font);
 }
 
 /* Services */
-.ser-cont h5{
+.ser-cont h5 {
   color: var(--primary-color);
 }
-.ser-cont p{
+.ser-cont p {
   font-size: 14px;
 }
 .img-ser {
