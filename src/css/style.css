@@ -22,7 +22,7 @@ body {
 
 :root {
   --primary-color: #12277d;
-  --light: #edf6ee;
+  --light: #EDF1F8;
   --white: #fff;
   --dark: #000;
 
@@ -613,12 +613,13 @@ button {
 
 .select-items {
   position: absolute;
-  background-color: #fff;
+  background-color: var(--white);
   width: 100%;
   border: 2px solid #ddd;
   border-radius: 4px;
   z-index: 99;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 
 .select-items div {
@@ -628,7 +629,7 @@ button {
 }
 
 .select-items div:hover {
-  background-color: #4b00ff;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -637,10 +638,8 @@ button {
 }
 
 .select-selected.select-arrow-active {
-  border-color: #4b00ff;
+  border-color: var(--primary-color);
 }
-
-
 
 .form-input input,
 .form-input textarea,
@@ -703,6 +702,6 @@ button {
 }
 
 .form-input select option:hover {
-  background-color: #4b00ff;
+  background-color: var(--primary-color);
   color: #fff;
 }
