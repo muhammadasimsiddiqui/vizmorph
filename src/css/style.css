@@ -22,7 +22,7 @@ body {
 
 :root {
   --primary-color: #12277d;
-  --light: #EDF1F8;
+  --light: #edf1f8;
   --white: #fff;
   --dark: #000;
 
@@ -572,74 +572,6 @@ button {
   position: relative;
   width: 100%;
 }
-.custom-select {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.custom-select select {
-  display: none; /* Hide the default select element */
-}
-
-.select-selected {
-  background-color: #fff;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  padding: 10px 15px;
-  font-size: 16px;
-  width: 100%;
-  color: #333;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-  position: relative;
-}
-
-.select-icon {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #333;
-  z-index: 2;
-  transition: transform 0.3s ease;
-  pointer-events: none; /* Prevent clicking on the icon */
-}
-
-.select-arrow-active .select-icon {
-  transform: translateY(-50%) rotate(180deg);
-}
-
-.select-items {
-  position: absolute;
-  background-color: var(--white);
-  width: 100%;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  z-index: 99;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-.select-items div {
-  padding: 10px 15px;
-  cursor: pointer;
-  color: #333;
-}
-
-.select-items div:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.select-items.select-hide {
-  display: none;
-}
-
-.select-selected.select-arrow-active {
-  border-color: var(--primary-color);
-}
 
 .form-input input,
 .form-input textarea,
@@ -655,8 +587,11 @@ button {
   box-sizing: border-box;
 }
 
+.form-input textarea {
+  resize: none;
+}
+
 .form-input .icon + input,
-.form-input .icon + textarea,
 .form-input .icon + select {
   padding-left: 50px;
 }
