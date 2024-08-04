@@ -532,50 +532,15 @@ button {
   color: var(--primary-color) !important;
 }
 
-/* .form-input {
-  margin: 10px auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-input input,
-.form-input textarea {
-  border: 2px solid #eee;
-  padding: 5px 10px 5px 50px;
-  font-size: 18px;
-  line-height: 30px;
-  outline: 0;
-  display: block;
-  width: 100%;
-}
-.form-input .icon {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  font-size: 25px;
-  color: #4b00ff;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* General container styling */
-/* General container styling */
-
-/* Styling for form input container */
-/* General container styling */
-
-.form-input {
+.contact-form-services .form-input {
   margin: 10px 0;
   position: relative;
   width: 100%;
 }
 
-.form-input input,
-.form-input textarea,
-.form-input select {
+.contact-form-services .form-input input,
+.contact-form-services .form-input textarea,
+.contact-form-services .form-input select {
   border: 2px solid #ddd;
   border-radius: 4px;
   padding: 10px 15px;
@@ -587,16 +552,16 @@ button {
   box-sizing: border-box;
 }
 
-.form-input textarea {
+.contact-form-services .form-input textarea {
   resize: none;
 }
 
-.form-input .icon + input,
-.form-input .icon + select {
+.contact-form-services .form-input .icon + input,
+.contact-form-services .form-input .icon + select {
   padding-left: 50px;
 }
 
-.form-input .icon {
+.contact-form-services .form-input .icon {
   position: absolute;
   left: 15px;
   font-size: 20px;
@@ -607,36 +572,25 @@ button {
   justify-content: center;
 }
 
-.textarea .icon {
-  padding-top: 16px;
-  align-items: flex-start;
-}
-
-.form-input input::placeholder,
-.form-input textarea::placeholder {
+.contact-form-services .form-input input::placeholder,
+.contact-form-services .form-input textarea::placeholder {
   color: #999;
 }
 
-.form-input select {
-  color: #333;
-}
-
-.form-input select option:first-of-type {
+.contact-form-services .form-input select option:first-of-type {
   color: #999;
 }
 
-.form-input input:focus,
-.form-input textarea:focus,
-.form-input select:focus {
+.contact-form-services .form-input select {
+  color: #999;
+}
+
+.contact-form-services .form-input select option {
+  color: #000;
+}
+
+.contact-form-services .form-input input:focus,
+.contact-form-services .form-input textarea:focus,
+.contact-form-services .form-input select:focus {
   border-color: var(--primary-color);
-}
-
-.form-input select option {
-  background-color: #fff;
-  color: #333;
-}
-
-.form-input select option:hover {
-  background-color: var(--primary-color);
-  color: #fff;
 }

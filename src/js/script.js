@@ -41,3 +41,12 @@ document.querySelectorAll('.nav-hero li a').forEach(link => {
 
 
   // 
+  const selectElement = document.getElementById('services');
+
+  selectElement.addEventListener('change', function() {
+      if (selectElement.value === "") {
+          selectElement.style.color = '#999';
+      } else {
+          selectElement.style.color = '#000';
+      }
+  });
