@@ -704,3 +704,7 @@ button {
 .footer .copyright {
   font-size: 14px;
 }
+
+.footer .col-md-5 a i{
+  border-color: var(--white);
+}
