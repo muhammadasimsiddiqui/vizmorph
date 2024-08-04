@@ -291,7 +291,7 @@ button {
   font-weight: 500;
 }
 
-.btn-banner-main {
+.primary-btn-light-main {
   overflow: hidden;
 }
 
@@ -302,7 +302,7 @@ button {
   }
 }
 
-.btn-banner {
+.primary-btn-light {
   font-family: var(--secondary-font);
   font-size: 17px;
   padding: 10px 30px;
@@ -320,7 +320,7 @@ button {
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
 }
 
-.btn-banner .gradient {
+.primary-btn-light .gradient {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -334,15 +334,15 @@ button {
   z-index: 0;
 }
 
-.btn-banner .label {
+.primary-btn-light .label {
   position: relative;
   z-index: 1;
 }
 
-.btn-banner .transition {
+.primary-btn-light .transition {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 500ms;
-  background-color: rgba(18, 39, 125, 1);
+  background-color: var(--primary-color);
   border-radius: 9999px;
   width: 0;
   height: 0;
@@ -353,22 +353,36 @@ button {
   z-index: 0;
 }
 
-.btn-banner:hover .transition {
+.primary-btn-light:hover .transition {
   width: 14em;
   height: 14em;
 }
 
-.btn-banner:hover {
-  background-color: rgba(18, 39, 125, 1);
+.primary-btn-light:hover {
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
-.btn-banner:active {
+.primary-btn-light:active {
   color: var(--white) !important;
   transform: scale(0.97);
 }
 
-#getquote .btn-banner {
+.primary-btn-dark .primary-btn-light {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.primary-btn-dark .primary-btn-light .transition {
+  background-color: var(--light);
+}
+
+.primary-btn-dark .primary-btn-light:hover {
+  background-color: var(--light) !important;
+  color: var(--primary-color) !important;
+}
+
+#getquote .primary-btn-light {
   padding: 4px 12px !important;
 }
 
