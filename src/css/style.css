@@ -511,6 +511,10 @@ button {
 .testimonials-reviews-reverse {
   pointer-events: none;
   z-index: -1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /**************************************  **************************************/
@@ -637,19 +641,17 @@ button {
   transform: translateX(0);
 }
 
-
 /**************************************  **************************************/
 /****************************** Footer Section ****************************/
 /**************************************  **************************************/
 
-.footer{
+.footer {
   background: #12143e;
 }
 
 .footer .link-widget {
   list-style: none;
   padding: 0;
-
 }
 
 .footer .link-widget li {
@@ -681,6 +683,6 @@ button {
   color: var(--light);
 }
 
-.footer .copyright{
+.footer .copyright {
   font-size: 14px;
 }
