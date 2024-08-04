@@ -21,7 +21,7 @@ body {
 }
 
 :root {
-  --primary-color: #12277d;
+  --primary-color: rgba(18, 39, 125, 1);
   --light: #edf1f8;
   --white: #fff;
   --dark: #000;
@@ -84,7 +84,7 @@ button {
 }
 
 .text-bg-dark {
-  background-color: rgba(18, 39, 125, 1) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .text-color {
@@ -115,7 +115,7 @@ button {
 
 /* NavBar Hover and Active CSS End */
 .heronavscroll {
-  background: rgba(18, 39, 125, 1);
+  background: var(--primary-color);
 }
 
 .nav-hero .nav-text {
@@ -646,6 +646,37 @@ button {
   background: #12143e;
 }
 
-.footer img{
-  
+.footer .link-widget {
+  list-style: none;
+  padding: 0;
+
+}
+
+.footer .link-widget li {
+  margin-bottom: 10px;
+}
+
+.footer .link-widget li a {
+  color: var(--white);
+  padding-left: 20px; /* Increase padding to give more space for the icon */
+  position: relative;
+  display: inline-block; /* Ensure the anchor is treated as inline-block for better control */
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.footer .link-widget li a::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 19%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.footer .link-widget li a:hover {
+  margin-left: 8px;
+  color: var(--light);
 }
