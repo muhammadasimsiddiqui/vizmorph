@@ -696,6 +696,7 @@
                         type="text"
                         name="first-name"
                         placeholder="First Name"
+                        pattern="[^0-9]*"
                         required
                       />
                     </div>
@@ -706,6 +707,7 @@
                         type="text"
                         name="last-name"
                         placeholder="Last Name"
+                        pattern="[^0-9]*"
                         required
                       />
                     </div>
@@ -771,7 +773,6 @@
                         name="subject"
                         placeholder="Subject"
                         required
-                        pattern="\d*"
                       />
                     </div>
                   </div>
@@ -786,7 +787,9 @@
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <input type="submit" value="submit" />
+                    <button type="submit" value="submit" class="btn-sub">
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>
