@@ -95,6 +95,140 @@ button {
   background-color: var(--primary-color);
 }
 
+
+/* Section Heading Css Start */
+.sec-title h2 {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.sec-title h2 span::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.4;
+  top: -10%;
+}
+.sec-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: var(--primary-color);
+  width: 100px;
+  bottom: -15%;
+}
+
+.sec-title h2 {
+  font-family: var(--secondary-font);
+}
+.sec-title p {
+  font-family: var(--primary-font);
+}
+
+.sec-mar {
+  margin-top: 60px;
+}
+
+
+.primary-btn-light-main {
+  overflow: hidden;
+}
+
+.primary-btn-light {
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  padding: 10px 30px;
+  font-weight: 600;
+  background: var(--white);
+  color: var(--primary-color);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+.primary-btn-light .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    rgba(18, 39, 125, 0),
+    rgba(18, 39, 125, 0),
+    rgba(18, 39, 125, 0.3)
+  );
+  z-index: 0;
+}
+
+.primary-btn-light .label {
+  position: relative;
+  z-index: 1;
+}
+
+.primary-btn-light .transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: var(--primary-color);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.primary-btn-light:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+.primary-btn-light:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.primary-btn-light:active {
+  color: var(--white) !important;
+  transform: scale(0.97);
+}
+
+.primary-btn-dark .primary-btn-light {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.primary-btn-dark .primary-btn-light .transition {
+  background-color: var(--light);
+}
+
+.primary-btn-dark .primary-btn-light:hover {
+  background-color: var(--light) !important;
+  color: var(--primary-color) !important;
+}
+
+#getquote .primary-btn-light {
+  padding: 4px 12px !important;
+}
+
+
+
 /* Header Css Start */
 
 .nav-hero .btn-close {
@@ -119,13 +253,13 @@ button {
 }
 
 .nav-hero .nav-text {
-  position: relative; /* Ensure dropdown positioning works */
+  position: relative;
 }
 
 .nav-hero .navbar-nav a.nav-link {
   position: relative;
   color: var(--white);
-  padding: 10px 15px; /* Add padding to improve spacing */
+  padding: 10px 15px;
 }
 
 .nav-hero .nav-link:hover,
@@ -158,9 +292,9 @@ button {
 
 /* Ensure dropdowns are styled correctly */
 .nav-hero .dropdown-menu {
-  background-color: var(--white); /* Adjust background if needed */
+  background-color: var(--white);
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-hero .dropdown-menu a {
@@ -173,37 +307,6 @@ button {
 }
 
 /* Header Css End */
-
-/* Section Heading Css Start */
-.sec-title h2 {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 20px;
-}
-
-.sec-title h2 span::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  width: 30px;
-  height: 30px;
-  transform: translateX(-50%);
-  z-index: -1;
-  opacity: 0.4;
-  top: -10%;
-}
-.sec-title h2::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: var(--primary-color);
-  width: 100px;
-  bottom: -15%;
-}
 
 /* HomePage */
 
@@ -291,110 +394,11 @@ button {
   font-weight: 500;
 }
 
-.primary-btn-light-main {
-  overflow: hidden;
-}
-
 @media (max-width: 425px) {
   .hero-section .hero-content {
     padding-top: 80px;
     padding-bottom: 40px;
   }
-}
-
-.primary-btn-light {
-  font-family: var(--secondary-font);
-  font-size: 17px;
-  padding: 10px 30px;
-  font-weight: 600;
-  background: var(--white);
-  color: var(--primary-color);
-  border: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50px;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
-}
-
-.primary-btn-light .gradient {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: linear-gradient(
-    rgba(18, 39, 125, 0),
-    rgba(18, 39, 125, 0),
-    rgba(18, 39, 125, 0.3)
-  );
-  z-index: 0;
-}
-
-.primary-btn-light .label {
-  position: relative;
-  z-index: 1;
-}
-
-.primary-btn-light .transition {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  transition-duration: 500ms;
-  background-color: var(--primary-color);
-  border-radius: 9999px;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
-
-.primary-btn-light:hover .transition {
-  width: 14em;
-  height: 14em;
-}
-
-.primary-btn-light:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-
-.primary-btn-light:active {
-  color: var(--white) !important;
-  transform: scale(0.97);
-}
-
-.primary-btn-dark .primary-btn-light {
-  background: var(--primary-color);
-  color: var(--white);
-}
-
-.primary-btn-dark .primary-btn-light .transition {
-  background-color: var(--light);
-}
-
-.primary-btn-dark .primary-btn-light:hover {
-  background-color: var(--light) !important;
-  color: var(--primary-color) !important;
-}
-
-#getquote .primary-btn-light {
-  padding: 4px 12px !important;
-}
-
-.sec-title h2 {
-  font-family: var(--secondary-font);
-}
-.sec-title p {
-  font-family: var(--primary-font);
-}
-
-.sec-mar {
-  margin-top: 60px;
 }
 
 /*****************************************  ****************************************/
