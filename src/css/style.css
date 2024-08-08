@@ -694,6 +694,118 @@ button {
 }
 
 /**************************************  **************************************/
+/****************************** Portfolio Section ****************************/
+/**************************************  **************************************/
+/* Styles for Swiper */
+
+/* Ensure the swiper-slide container takes the necessary space */
+.portfolio-slider-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.portfolio-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.portfolio-link:hover img {
+  transform: scale(1.1);
+}
+.portfolio-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.portfolio-link:hover::before {
+  opacity: 1;
+}
+
+.portfolio-link i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.portfolio-link:hover i {
+  opacity: 1;
+}
+
+/* 
+.port-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.port-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-cont:hover .port-img img {
+  transform: scale(1.10); 
+}
+
+.port-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-cont:hover .port-cont {
+  opacity: 1;
+}
+
+.port-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-cont:hover .port-img::before {
+  opacity: 1;
+} */
+
+/**************************************  **************************************/
 /****************************** Footer Section ****************************/
 /**************************************  **************************************/
 

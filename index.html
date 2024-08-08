@@ -37,6 +37,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <!------------------------------------  ---------------------------------->
+    <!--------------------------- LightBox CSS CDN --------------------------->
+    <!------------------------------------  ---------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css"
+    />
   </head>
   <body class="home" id="home">
     <!-----------------------------  ------------------------------->
@@ -964,13 +972,90 @@
         <div class="sec-title text-center mb-4">
           <h2 class="fw-bolder"><span>P</span>ortfolio</h2>
         </div>
-        <div class="portfolio-main-cont">
-          <div class="portfolio-cont">
-            <div class="port-img">
-              <img src="" alt="">
+        <div class="swiper-container portfolio-slider-main">
+          <div class="swiper-wrapper">
+            <!-- Swiper slides go here -->
+            <div class="swiper-slide portfolio-cont">
+              <a
+                href="img/portfolio/Rendering/Air Cooler.32.jpg"
+                data-lightbox="portfolio-rendering-image"
+                data-title="Air Cooler"
+                class="portfolio-link"
+              >
+                <img
+                  src="img/portfolio/Rendering/Air Cooler.32.jpg"
+                  alt="Air Cooler"
+                />
+                <i class="fa-solid fa-plus"></i>
+              </a>
             </div>
-            <div class="port-cont"></div>
+            <!-- Swiper slides go here -->
+            <div class="swiper-slide portfolio-cont">
+              <a
+                href="img/portfolio/Rendering/Air Cooler.34.jpg"
+                data-lightbox="portfolio-rendering-image"
+                data-title="Air Cooler"
+                class="portfolio-link"
+              >
+                <img
+                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
+                  alt="Air Cooler"
+                />
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+            <!-- Swiper slides go here -->
+            <div class="swiper-slide portfolio-cont">
+              <a
+                href="img/portfolio/Rendering/Car.76.jpg"
+                data-lightbox="portfolio-rendering-image"
+                data-title="Air Cooler"
+                class="portfolio-link"
+              >
+                <img
+                  src="img/portfolio/Rendering/Car.76.jpg"
+                  alt="Air Cooler"
+                />
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+            <!-- Swiper slides go here -->
+            <div class="swiper-slide portfolio-cont">
+              <a
+                href="img/portfolio/Rendering/Air Cooler.32.jpg"
+                data-lightbox="portfolio-rendering-image"
+                data-title="Air Cooler"
+                class="portfolio-link"
+              >
+                <img
+                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
+                  alt="Air Cooler"
+                />
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+            <!-- Swiper slides go here -->
+            <div class="swiper-slide portfolio-cont">
+              <a
+                href="img/portfolio/Rendering/Air Cooler.32.jpg"
+                data-lightbox="portfolio-rendering-image"
+                data-title="Air Cooler"
+                class="portfolio-link"
+              >
+                <img
+                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
+                  alt="Air Cooler"
+                />
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+            <!-- Repeat for other slides -->
           </div>
+          <!-- Add Pagination if needed -->
+          <div class="portfolio-pagination"></div>
+          <!-- Add Navigation if needed -->
+          <div class="portfolio-btn-next swiper-button-next"></div>
+          <div class="portfolio-btn-prev swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -1063,6 +1148,11 @@
   <!-----------------------------------  ----------------------------------->
   <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!--------------------------------  -------------------------------->
+  <!--------------------------- JQuery CDN --------------------------->
+  <!--------------------------------  -------------------------------->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <!---------------------------------  ---------------------------------->
   <!--------------------------- Swiper JS CDN --------------------------->
   <!---------------------------------  ---------------------------------->
@@ -1083,7 +1173,7 @@
         reverseDirection: false,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".testimonials-pagination",
         clickable: true,
       },
       mousewheel: {
@@ -1105,12 +1195,37 @@
         reverseDirection: true,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".testimonials-pagination",
         clickable: true,
       },
       mousewheel: {
         forceToAxis: true,
       },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".portfolio-slider-main", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".portfolio-btn-next",
+        prevEl: ".portfolio-btn-prev",
+      },
+      pagination: {
+        el: ".portfolio-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-----------------------------------  ---------------------------------->
+  <!--------------------------- LightBox JS CDN --------------------------->
+  <!-----------------------------------  ---------------------------------->
+  <script src="src/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+      disableScrolling: true,
     });
   </script>
 </html>
