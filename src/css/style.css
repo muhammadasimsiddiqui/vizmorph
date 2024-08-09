@@ -225,8 +225,9 @@ button {
   padding: 4px 12px !important;
 }
 
-/* Header Css Start */
-
+/************************************  ************************************/
+/****************************** Header Section ******************************/
+/************************************  ************************************/
 .nav-hero .btn-close {
   background: none;
   opacity: 0.8;
@@ -243,7 +244,6 @@ button {
   color: var(--white);
 }
 
-/* NavBar Hover and Active CSS End */
 .heronavscroll {
   background: var(--primary-color);
 }
@@ -286,7 +286,6 @@ button {
   width: 100%;
 }
 
-/* Ensure dropdowns are styled correctly */
 .nav-hero .dropdown-menu {
   background-color: var(--white);
   border: none;
@@ -302,14 +301,9 @@ button {
   color: var(--white);
 }
 
-/* Header Css End */
-
-/* HomePage */
-
 /************************************  ************************************/
 /****************************** Hero Section ******************************/
 /************************************  ************************************/
-
 .hero-section {
   height: 100dvh;
   position: relative;
@@ -400,7 +394,6 @@ button {
 /*****************************************  ****************************************/
 /****************************** What We Offer Section ******************************/
 /*****************************************  ****************************************/
-
 .small-icon-box {
   text-align: center;
   margin: 30px 0 0 0;
@@ -419,7 +412,6 @@ button {
 /************************************  *************************************/
 /****************************** Why Choose Us ******************************/
 /************************************  *************************************/
-
 .whychooseus p {
   font-size: 14px;
 }
@@ -427,7 +419,6 @@ button {
 /**************************************  **************************************/
 /****************************** Services Section ******************************/
 /**************************************  **************************************/
-
 .ser-cont p {
   font-size: 14px;
 }
@@ -473,8 +464,7 @@ button {
   background-image: url(../../img/services/server.jpg);
 }
 
-/* From Uiverse.io by SouravBandyopadhyay */
-
+/* Service Card */
 .services-card-corner {
   display: flex;
   align-items: center;
@@ -547,7 +537,6 @@ button {
 /**************************************  **************************************/
 /**************************** Testimonials Section ****************************/
 /**************************************  **************************************/
-
 .testimonials {
   background-color: var(--primary-color);
 }
@@ -696,34 +685,66 @@ button {
 /**************************************  **************************************/
 /****************************** Portfolio Section ****************************/
 /**************************************  **************************************/
-/* Styles for Swiper */
-
-/* Ensure the swiper-slide container takes the necessary space */
 .portfolio-slider-main {
   position: relative;
   overflow: hidden;
 }
 
-.swiper-slide a {
+.portfolio-btn-next,
+.portfolio-btn-prev {
+  background-color: var(--light);
+  border-radius: 50px;
+}
+
+.portfolio-btn-next::after,
+.portfolio-btn-prev::after {
+  font-size: 24px !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  color: var(--primary-color) !important;
+}
+
+.portfolio-btn-prev::after {
+  content: "\f104" !important;
+}
+
+.portfolio-btn-next::after {
+  content: "\f105" !important;
+}
+
+.portfolio-pagination span {
+  background-color: var(--primary-color) !important;
+}
+
+.portfolio-slider-main .swiper-wrapper {
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-slider-main .swiper-slide a {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
+
 .portfolio-link {
   display: block;
   position: relative;
   overflow: hidden;
 }
+
 .portfolio-link img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.5s ease;
 }
+
 .portfolio-link:hover img {
   transform: scale(1.1);
 }
+
 .portfolio-link::before {
   content: "";
   position: absolute;
@@ -731,9 +752,9 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
   z-index: 1;
 }
 
@@ -749,7 +770,7 @@ button {
   font-size: 24px;
   color: white;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
   z-index: 2;
 }
 
@@ -757,58 +778,9 @@ button {
   opacity: 1;
 }
 
-/* 
-.port-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.port-img img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.portfolio-cont:hover .port-img img {
-  transform: scale(1.10); 
-}
-
-.port-cont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-cont:hover .port-cont {
-  opacity: 1;
-}
-
-.port-img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-cont:hover .port-img::before {
-  opacity: 1;
-} */
-
 /**************************************  **************************************/
 /****************************** Footer Section ****************************/
 /**************************************  **************************************/
-
 .footer {
   background: #12143e;
 }

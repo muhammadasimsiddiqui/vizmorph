@@ -9,6 +9,7 @@
       href="img/VizMorph_favicon.png"
       type="image/x-icon"
     />
+
     <!------------------------------------  ----------------------------------->
     <!--------------------------- Bootstrap CSS CDN --------------------------->
     <!------------------------------------  ----------------------------------->
@@ -972,88 +973,11 @@
         <div class="sec-title text-center mb-4">
           <h2 class="fw-bolder"><span>P</span>ortfolio</h2>
         </div>
-        <div class="swiper-container portfolio-slider-main">
-          <div class="swiper-wrapper">
-            <!-- Swiper slides go here -->
-            <div class="swiper-slide portfolio-cont">
-              <a
-                href="img/portfolio/Rendering/Air Cooler.32.jpg"
-                data-lightbox="portfolio-rendering-image"
-                data-title="Air Cooler"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/portfolio/Rendering/Air Cooler.32.jpg"
-                  alt="Air Cooler"
-                />
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </div>
-            <!-- Swiper slides go here -->
-            <div class="swiper-slide portfolio-cont">
-              <a
-                href="img/portfolio/Rendering/Air Cooler.34.jpg"
-                data-lightbox="portfolio-rendering-image"
-                data-title="Air Cooler"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
-                  alt="Air Cooler"
-                />
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </div>
-            <!-- Swiper slides go here -->
-            <div class="swiper-slide portfolio-cont">
-              <a
-                href="img/portfolio/Rendering/Car.76.jpg"
-                data-lightbox="portfolio-rendering-image"
-                data-title="Air Cooler"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/portfolio/Rendering/Car.76.jpg"
-                  alt="Air Cooler"
-                />
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </div>
-            <!-- Swiper slides go here -->
-            <div class="swiper-slide portfolio-cont">
-              <a
-                href="img/portfolio/Rendering/Air Cooler.32.jpg"
-                data-lightbox="portfolio-rendering-image"
-                data-title="Air Cooler"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
-                  alt="Air Cooler"
-                />
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </div>
-            <!-- Swiper slides go here -->
-            <div class="swiper-slide portfolio-cont">
-              <a
-                href="img/portfolio/Rendering/Air Cooler.32.jpg"
-                data-lightbox="portfolio-rendering-image"
-                data-title="Air Cooler"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/portfolio/Rendering/Air Cooler.34.jpg"
-                  alt="Air Cooler"
-                />
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </div>
-            <!-- Repeat for other slides -->
-          </div>
-          <!-- Add Pagination if needed -->
-          <div class="portfolio-pagination"></div>
-          <!-- Add Navigation if needed -->
+        <div class="swiper portfolio-slider-main">
+          <div class="swiper-wrapper"></div>
+          <!-- Pagination -->
+          <div class="portfolio-pagination swiper-pagination"></div>
+          <!-- Button -->
           <div class="portfolio-btn-next swiper-button-next"></div>
           <div class="portfolio-btn-prev swiper-button-prev"></div>
         </div>
@@ -1151,7 +1075,7 @@
   <!--------------------------------  -------------------------------->
   <!--------------------------- JQuery CDN --------------------------->
   <!--------------------------------  -------------------------------->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/js/jquery-3.7.1.js"></script>
 
   <!---------------------------------  ---------------------------------->
   <!--------------------------- Swiper JS CDN --------------------------->
@@ -1187,7 +1111,7 @@
       spaceBetween: 20,
       centeredSlides: true,
       loop: true,
-      speed: 2000, // Slow speed to create a smooth scrolling effect
+      speed: 2000,
       grabCursor: false,
       autoplay: {
         delay: 0,
@@ -1203,29 +1127,17 @@
       },
     });
   </script>
-  <script>
-    var swiper = new Swiper(".portfolio-slider-main", {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".portfolio-btn-next",
-        prevEl: ".portfolio-btn-prev",
-      },
-      pagination: {
-        el: ".portfolio-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+
+  <script src="src/js/portfolio.js"></script>
   <!-----------------------------------  ---------------------------------->
   <!--------------------------- LightBox JS CDN --------------------------->
   <!-----------------------------------  ---------------------------------->
   <script src="src/js/lightbox-plus-jquery.min.js"></script>
   <script>
-    lightbox.option({
-      resizeDuration: 200,
-      wrapAround: true,
-      disableScrolling: true,
-    });
+    // lightbox.option({
+    //   resizeDuration: 0,
+    //   wrapAround: true,
+    //   disableScrolling: true,
+    // });
   </script>
 </html>
